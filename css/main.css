@@ -1,0 +1,633 @@
+/* General Styles */
+body {
+    padding-top: 50px;
+}
+/* CUSTOM STYLES */
+  /* Header */
+.navbar {
+    border-radius: 0px;
+}
+.navbar-brand {
+    background-color: #fee300;
+}
+.navbar-inverse .navbar-brand {
+    color: #212121;
+}
+.navbar-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    font-size: 0.8em;
+}
+.navbar-inverse .navbar-text {
+    color: #cbcbcb;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #212121;
+    background-color: #fee300;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #212121;
+    background-color: #fee300;
+    }
+  /* Main */
+    /* PART I */
+#carouselT img {
+    max-height: 35vw;
+    width: 100%;
+}
+#carouselT .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    bottom: 50%;
+    transform: translateY(50%);
+    padding-top: 0px;
+}
+#carouselT .carousel-caption:hover {
+    background-color: #fee300;
+    cursor: pointer;
+}
+#carouselT .carousel-caption h2 {
+    color: #fee300;
+    font-size: 3vw;
+    font-weight: 300;
+}
+#carouselT .carousel-caption p {
+    font-size: 2vw;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+#carouselT .carousel-caption:hover h2 {
+    color: #212121;
+}
+#carouselT .carousel-caption:hover p {
+    color: #212121;
+}
+#carouselT .carousel-control {
+    background-color: #212121;
+    padding: 0px;
+    margin: 0px;
+    max-width: 4.2%;
+    top: 88%;
+    opacity: 1;
+}
+#carouselT .carousel-control.left {
+    left: 81%;
+    background-image: none;
+}
+#carouselT .carousel-control.right {
+    right: 10%;
+    background-image: none;
+}
+#carouselT .carousel-control:hover {
+    background-color: #fee300;
+    color: #212121;
+    opacity: 1;
+}
+#carouselT .carousel-control .glyphicon-chevron-left, #carouselT .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    top: 12%;
+}
+#carouselT .carousel-control .glyphicon-chevron-right {
+    left: 0%;
+}
+#carouselT .carousel-control .glyphicon-chevron-left {
+    right: 0%;
+    margin-left: 0;
+    left: 0%;
+}
+    /* PART II */
+#part2 .row {
+    margin: 60px 0;
+}
+#part2 .row div {
+    overflow: auto;
+}
+#part2 span {
+    font-size: 3vw;
+    background-color: #212121;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+#part2 span:hover {
+    background-color: #fee300;
+    color: #212121;
+}
+    /* PART III */
+#part3, #part3v2 {
+    background-color: #212121;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#part3 h3, #part3v2 h3 {
+    color: #fee300;
+    margin-bottom: 30px;
+}
+#part3 #carouselM .carousel-control {
+    top: -60px;
+    bottom: 100%;
+    width: 30px;
+    height: 30px;
+    background-image: none;
+    background-color: #888;
+    opacity: 1;
+    padding-right: 0px;
+}
+#carouselM .carousel-control:hover {
+    background-color: #fee300;
+    color: #212121;
+}
+#carouselN .carousel-control:hover {
+    background-color: #fee300;
+    color: #212121; 
+}
+#part3 .carousel-control .glyphicon-chevron-left {
+    right: 0;
+    left: 0;
+    margin-left: 0px;
+    margin-top: -15px;
+    font-size: 20px;
+    top: 60%;
+}
+#part3 .carousel-control .glyphicon-chevron-right {
+    right: 0;
+    left: 0;
+    margin-right: 0px;
+    margin-top: -15px;
+    font-size: 20px;
+    top: 60%;
+}
+#carouselM .card, #carouselN .card {
+    background-color: #505050;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+#carouselM .card div, #carouselN .card div {
+    text-align: center;
+    margin-top: 20px;
+}
+#carouselM .card .imgo, #carouselN .card .imgo {
+    padding: 0%;
+    margin: 0%;
+}
+#carouselM .card .imgo img, #carouselN .card .imgo img {
+    opacity: 1;
+    position: relative;
+    transition: 0.5s ease;
+    display: block;
+    width: 100%;
+    height: 50vh;
+    cursor: pointer;
+}
+#carouselM .card .imgo .overlay, #carouselN .card .imgo .overlay {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#carouselM .card .imgo:hover img {
+    opacity: 0.3;
+}
+#carouselN .card .imgo:hover img {
+    opacity: 0.3;
+}
+#carouselM .card .imgo:hover .overlay {
+    opacity: 1;
+}
+#carouselN .card .imgo:hover .overlay {
+    opacity: 1;
+}
+#carouselM .card .imgo .overlay span, #carouselN .card .imgo .overlay span {
+    background-color: #fee300;
+    color: #212121;
+    padding: 5px;
+    cursor: pointer;
+}
+#carouselM .card .imgo .overlay span:hover {
+    background-color: #212121;
+    color: #fff;
+}
+#carouselN .card .imgo .overlay span:hover {
+    background-color: #212121;
+    color: #fff;
+}
+#carouselM h4, #carouselN h4 {
+    color: #fee300;
+    text-align: center;
+    font-size: 1.5vw;
+}
+#carouselM .card div span, #carouselN .card div span {
+    font-size: 1.5vw;
+    color: #fff;
+}
+#carouselM p, #carouselN p {
+    color: #fff;
+    font-size: 1.2vw;
+    text-align: center;
+}
+        /* Parta3v2 */
+#part3v2 {
+    margin-bottom: 10px;
+}
+#part3v2 h3 {
+    text-align: center;
+}
+#part3v2 #carouselN .carousel-control {
+    top: 0px;
+    bottom: 0px;
+    background-image: none;
+    background-color: #888;
+    opacity: 1;
+}
+#part3v2 #carouselN .carousel-control:hover {
+    background-color: #fee300;
+}
+#part3v2 #carouselN .carousel-control.left {
+    left: 0px;
+}
+#part3v2 #carouselN .carousel-control.right {
+    right: 0px;
+}
+#part3v2 #carouselN h4 {
+    font-size: 4vw;
+}
+#part3v2 #carouselN .card div span {
+    font-size: 3vw;
+}
+#part3v2 #carouselN p {
+    font-size: 3vw;
+}
+    /* PART IV */
+#part4 {
+    padding: 40px 0;
+}
+#part4 h4 {
+    margin-bottom: 20px;
+}
+#part4 p {
+    margin-top: 50px;
+}
+#part4 ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0px;
+}
+#part4 ul li {
+    margin-left: 0;
+    padding: 5px 0;
+}
+#part4 ul li a {
+    display: block;
+    background-color: #212121;
+    color: #fff;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+#part4 ul li a:hover {
+    background-color: #fee300;
+    color: #212121;
+}
+#part4 ul li a span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#part4 iframe {
+    width: 100%;
+    min-height: 30vh;
+    overflow: visible;
+    margin-top: 40px;
+}
+        /* P4V2 */
+#p4v2 .panel-heading {
+    border: none;
+    background-color: #212121;
+    text-align: center;
+}
+#p4v2 .panel-heading a {
+    color: #fee300;
+}
+#p4v2 img {
+    margin: 5px auto;
+    cursor: pointer;
+}
+#p4v2 img:hover {
+    opacity: 0.5;
+}
+#p4v2 p {
+    text-align: center;
+}
+    /* PART V */
+#part5 {
+    background-color: #212121;
+    padding: 40px 0;
+}
+#part5 h3 {
+    color: #fee300;
+    margin-bottom: 30px;
+}
+#part5 .imgo {
+    padding: 0;
+    margin: 0;
+}
+#part5 .imgo img {
+    height: 50vh;
+    width: 100%;
+    opacity: 1;
+    position: relative;
+    transition: 0.5s ease;
+    display: block;
+    cursor: pointer;
+}
+#part5 .imgo .overlay {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#part5 .imgo:hover img {
+    opacity: 0.3;
+}
+#part5 .imgo:hover .overlay {
+    opacity: 1;
+}
+#part5 .imgo .overlay span {
+    background-color: #fee300;
+    color: #212121;
+    padding: 10px;
+    cursor: pointer;
+}
+#part5 .imgo .overlay span:hover {
+    background-color: #212121;
+    color: #fff;
+}
+#part5 .bpost {
+    overflow: auto;
+}
+#part5 .bpost .dates {
+    float: left;
+    background: #fee300;
+    padding: 10px;
+    text-align: center;
+    color: #212121;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#part5 .bpost .dates:hover {
+    background-color: #888;
+    color: #fff;
+}
+#part5 .bpost h5{
+    color: #fff;
+    margin-top: 20px;
+}
+#part5 .bpost p {
+    color: #888;
+    font-size: 0.8em;
+}
+    /* PART VI */
+#part6 {
+    padding: 40px 0;
+}
+#part6 h4 {
+    margin-bottom: 20px;
+}
+#part6 a {
+    background-color: #888888;
+    width: 100%;
+    color: #fff;
+    font-size: 3vw;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+#part6 a:hover {
+    background-color: #212121;
+    color: #fee300;
+}
+    /* PART VII */
+#part7 {
+    background-color: #212121;
+    color: #888;
+    padding: 20px 0;
+}
+#part7 h5 {
+    color: #fee300;
+    margin-bottom: 20px;
+}
+#part7 span {
+    color: #fff;
+}
+#part7 span:hover {
+    color: #fee300;
+}
+#part7 a {
+    font-size: 2vw;
+    background-color: #888;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#part7 a:hover {
+    background-color: #fee300;
+}
+#part7 a:hover span {
+    color: #212121;
+}
+
+  /* Footer */
+footer {
+    background-color: #888;
+    overflow: auto;
+    height: 5vh;
+    line-height: 5vh;
+}
+footer .leftf {
+    float: left;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+footer .rightf a {
+    float: right;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.5em;
+}
+footer .rightf a:hover {
+    color: #fee300;
+}
+
+    /* Modal */
+
+    .modal-header {
+        padding: 10px;
+        border-bottom: none;
+        background-color: #fee300;
+    }
+    .close {
+        color: #212121;
+        text-shadow: none;
+        opacity: 1;
+      }
+    .modal-body {
+        padding: 0;
+    }
+
+  /* Media Quaries */
+
+@media screen and (max-width: 629px) {
+    footer {
+        text-align: center;
+        height: 10vh;
+    }
+    footer .leftf {
+        float: none;
+    }
+    footer .rightf a{
+        float: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .navbar-text {
+        visibility: hidden;
+    } 
+    .carousel-caption {
+        right: 30%;
+        left: 30%;
+        padding-bottom: 10px;
+    }
+    #carouselT .carousel-control .glyphicon-chevron-right, #carouselT .carousel-control .glyphicon-chevron-left {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        font-size: 2vw;
+        top: 25%;
+    }
+    #part2 .row {
+        margin: 20px 0;
+    }
+    #part3 {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    #part3 h3 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #carouselM .card {
+        padding-bottom: 5px;
+    }
+    #carouselM .card div {
+        margin-top: 5px;
+    }
+    .col-xs-4 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #carouselM .carousel-control.left {
+        left: 90vw;
+    }
+    #carouselM .carousel-control {
+        top: -40px;
+    }
+    #p4panel1 {
+        display: none;
+    }
+    #part5 h3 {
+        text-align: center;
+    }
+    #part5 img {
+        height: 40vh;
+    }
+    #part5 .bpost {
+        margin-bottom: 15px;
+    }
+    #part6 h4 {
+        text-align: center;
+    }
+    #part6 a {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-inverse .navbar-nav>li>a {
+        font-size: x-small;
+    }
+    .col-xs-4 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #part2 h3 {
+        font-size: 1.5em;
+    }
+    #part3 #carouselM .carousel-control.left {
+        left: 670px;
+    }
+    #part3 #carouselM .carousel-control.right {
+        right: 18px;
+    }
+    #carouselM .card .imgo img {
+        height: 30vh;
+      }
+    #part4 p:nth-child(2) {
+        margin-top: 20px;
+    }
+    #part5 img {
+        height: 30vh;
+    }
+    #part6 a {
+        margin-bottom: 30px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #part3 #carouselM .carousel-control.left {
+        left: 890px;
+    }
+    #part3 #carouselM .carousel-control.right {
+        right: 18px;
+    }
+}
+@media screen and (min-width: 1200px) {  
+    #part7 .col-md-4 .row {
+        margin-bottom: 20px;
+    }
+    #part3 #carouselM .carousel-control.left {
+        left: 1090px;
+    }
+    #part3 #carouselM .carousel-control.right {
+        right: 15px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .carousel-caption {
+        right: 30%;
+        left: 30%;
+        padding-bottom: 10px;
+    }
+    #carouselT .carousel-control .glyphicon-chevron-left, #carouselT .carousel-control .glyphicon-chevron-right {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        font-size: 3vw;
+    }
+}
